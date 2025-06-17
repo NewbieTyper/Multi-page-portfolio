@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="hero.html"><i class="fa-solid fa-xmark"></i>FAGO</a></li>
+      <li><a href="skills.html"><i class="fas fa-tv"></i>Skills</a></li>
+      <li><a href="testimony.html"><i class="fas fa-comment"></i>Testimony</a></li>
+      <li><a href="#"><i class="fas fa-folder"></i>Projects</a></li>
+      <li><a href="contact.html"><i class="fas fa-user"></i>Contact</a></li>
+    </ul>
+    
+     
+    <ul class="navbar">
+      <li><a href="hero.html" id="title" onclick="removeSidebar()" style="color: white; font-size: 20px;">FAGO</a></li>
+      <li class="hideOnMobile"><a href="skills.html" style="color: white; font-size: 20px;">Skills</a></li>
+      <li class="hideOnMobile"><a href="testimony.html" style="color: white; font-size: 20px;">Testimony</a></li>
+      <li class="hideOnMobile"><a href="#" style="color: white; font-size: 20px;">Projects</a></li>
+      <li class="hideOnMobile"><a href="contact.html" style="color: white; font-size: 20px;">Contact</a></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><i style="color: white; font-size: 20px;" class="fa-solid fa-bars"></i></a></li>
+    </ul>
+  </nav>
+
+  <section id="project-section">
+    <h2 style="display: flex; align-items: center; justify-content: center; color: white;">Projects</h2>
+
+    <div class="group">
+   <div class="text">
+    Welcome to my project section.In this section i shall  be displaying some of the projects ive worked on with some being accomplished through my efforts and others with aid
+   </div>
+
+   <div class="project-list">
+    <a href="http://127.0.0.1:5501/index.html" target="_blank" rel="noopener noreferrer" class="project-card">
+      <img class="img1" src="images/Screenshot 2025-06-04 142701.png" alt="Project One" />
+      <div class="project-content">
+        <h3 class="project-title">Coffee Webpage</h3>
+        <p class="project-description">This project displays a simple coffee webpage
+        </p>
+      </div>
+    </a>
+    <a href="" target="_blank" rel="noopener noreferrer" class="project-card">
+      <img class="img" src="images/Sunset.jpg" alt="Project Two" />
+      <div class="project-content">
+        <h3 class="project-title">Multi-Webpage Website</h3>
+        <p class="project-description">A simple website with multiple webpages</p>
+      </div>
+    </a>
+      </div>
+    </a>
+  </div>
+</body>
+</html>

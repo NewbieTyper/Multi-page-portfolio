@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="hero.html"><i class="fa-solid fa-xmark"></i></a></li>
+      <li><a href="#"><i class="fas fa-tv"></i>Skills</a></li>
+      <li><a href="testimony.html"><i class="fas fa-comment"></i>Testimony</a></li>
+      <li><a href="projects.html"><i class="fas fa-folder"></i>Projects</a></li>
+      <li><a href="contact.html"><i class="fas fa-user"></i>Contact</a></li>
+    </ul>
+    
+     
+    <ul class="navbar">
+      <li><a href="hero.html" id="title" onclick="removeSidebar()" style="color: white; font-size: 20px;">FAGO</a></li>
+      <li class="hideOnMobile"><a href="#" style="color: white; font-size: 20px;">Skills</a></li>
+      <li class="hideOnMobile"><a href="testimony.html" style="color: white; font-size: 20px;">Testimony</a></li>
+      <li class="hideOnMobile"><a href="projects.html" style="color: white; font-size: 20px;">Projects</a></li>
+      <li class="hideOnMobile"><a href="contact.html" style="color: white; font-size: 20px;">Contact</a></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><i style="color: white; font-size: 20px;" class="fa-solid fa-bars"></i></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar(){
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display = "flex"
+    }
+
+    function hideSidebar(){
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display = "none"
+    }
+  </script>
+
+
+  <section id="skills-section">
+    <h2  style="display: flex; align-items: center; justify-content: center; color: white;" >Skills</h2>
+    <div class="text">
+     Over my time of coding  ive been able to gain a decent mastery of html,css and MYSQL but i shall still strive to learn more to add more weight to my skills and some improvements to my works so i can become a valuable asset.
+    </div>
+
+    <div class="cells">
+      <div class="cell">
+        <img  src="images/css-logo.webp" alt="html logo">
+        <span style="color: white;">HTML</span>
+      </div>
+
+      <div class="cell">
+        <img  src="images/html-logo.webp" alt="css logo">
+        <span style="color: white;">CSS</span>
+    </div>
+
+    <div class="cell">
+      <img  src="images/mysql.svg" alt="sql logo">
+      <span style="color: white;">MYSQL</span>
+  </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
